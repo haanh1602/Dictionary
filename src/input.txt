@@ -1,0 +1,8 @@
+hello	xin chào
+dog	con chó
+cat	con mèo
+dictionary	từ điển
+helloworld	:)
+
+
+an	một
