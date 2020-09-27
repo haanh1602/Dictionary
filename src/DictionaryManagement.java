@@ -46,4 +46,24 @@ public class DictionaryManagement {
             System.out.println(e);
         }
     }
+    
+    public void dictionaryLookup() {
+        Scanner sc = new Scanner(System.in);
+        String lookup = sc.nextLine();
+        if (lookup.equals("Look up")) {
+            System.out.print("Type in your word: ");
+            String wordLookup = sc.nextLine();
+            int count = 0;
+            for (int i = 0; i < dictionary.numOfWord; i++) {
+                if (wordLookup.equals(dictionary.words[i].getWord_target())) {
+                    System.out.println("The word you looking for: " + dictionary.words[i].getWord_target() + " - " + dictionary.words[i].getWord_explain());
+                    count++;
+                    break;
+                }
+            }
+            if (count == 0) {
+                System.out.println("Not found!");
+            }
+        }
+    }
 }
