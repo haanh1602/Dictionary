@@ -1,4 +1,4 @@
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+//import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -53,17 +53,14 @@ public class DictionaryManagement {
         if (lookup.equals("Look up")) {
             System.out.print("Type in your word: ");
             String wordLookup = sc.nextLine();
-            int count = 0;
             for (int i = 0; i < dictionary.numOfWord; i++) {
                 if (wordLookup.equals(dictionary.words[i].getWord_target())) {
-                    System.out.println("The word you looking for: " + dictionary.words[i].getWord_target() + " - " + dictionary.words[i].getWord_explain());
-                    count++;
-                    break;
+                    System.out.println("The word you looking for: "
+                            + dictionary.words[i].getWord_target() + " - " + dictionary.words[i].getWord_explain());
+                    return;
                 }
             }
-            if (count == 0) {
-                System.out.println("Not found!");
-            }
+            System.out.println("Not found!");
         }
     }
 }

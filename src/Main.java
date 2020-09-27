@@ -9,6 +9,7 @@ public class Main {
         //a.dictionaryManagement.insertFromCommandline();
         a.dictionaryManagement.insertFromFile();
         a.dictionaryCommandline.showAllWords();
+        a.dictionaryManagement.dictionaryLookup();
         //a.dictionaryCommandline.dictionaryBasic();
         //System.out.println(a.words[0]);
     }
