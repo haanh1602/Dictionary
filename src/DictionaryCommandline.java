@@ -37,4 +37,11 @@ public class DictionaryCommandline {
         dictionaryManagement.insertFromCommandline();
         showAllWords();
     }
+    
+    public void dictionaryAdvanced() {
+        DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
+        dictionaryManagement.insetFromFile();
+        dictionaryManagement.dictionaryLookup();
+        showAllWords();
+    }
 }
